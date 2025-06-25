@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Portfolio — Demo User</title>
-  <meta name="description" content="Pixel-art style portfolio for IT/GameDev specialist.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Demo User – Pixel Portfolio</title>
+  <meta name="description" content="Pixel-art style portfolio for IT/GameDev specialist Demo User. Retro, fast, mobile-first and SEO optimized.">
   <meta name="author" content="Demo User">
+  <meta name="robots" content="index,follow">
   <link rel="icon" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" media="all">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="pixel-bg"></div>
+  <div class="pixel-bg" aria-hidden="true"></div>
   <header class="pixel-border pixel-header">
     <div class="header-content fade-in">
       <div class="pixel-hero">
-        <!-- Pixel avatar from Pixelarticons -->
-        <img class="pixel-avatar" src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/user.svg" alt="Pixel avatar Demo User" />
+        <span class="big-emoji" aria-label="User">👷‍♂️</span>
         <h1 class="pixel-title">Demo User</h1>
-        <span class="pixel-desc">IT & Game Dev Specialist</span>
+        <span class="pixel-desc">IT &amp; Game Dev Specialist</span>
         <div class="localisation">Arcadia City, Cyberspace</div>
       </div>
-      <nav class="pixel-nav">
+      <nav class="pixel-nav" aria-label="Main navigation">
         <a href="#about">ABOUT</a>
         <a href="#experience">EXPERIENCE</a>
         <a href="#stack">TECH</a>
@@ -32,27 +34,23 @@
       </nav>
     </div>
   </header>
-  <main>
-    <!-- ABOUT -->
-    <section id="about" class="pixel-window fade-in">
+  <main id="main-content">
+    <section id="about" class="pixel-window fade-in" tabindex="-1">
       <h2>ABOUT</h2>
       <div class="about-flex pixel-text">
         <p>
+          <span class="big-emoji" aria-label="User">👷‍♂️</span>
           Passionate <span class="pixel-keyword">developer</span> with a love for pixel art, retro games, and modern technology.<br>
           Always seeking new challenges and creative projects.<br>
           <span class="pixel-keyword">Level 18 | HP: 87/100 | EXP: 9000</span>
         </p>
       </div>
     </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="pixel-window fade-in">
+    <section id="experience" class="pixel-window fade-in" tabindex="-1">
       <h2>EXPERIENCE</h2>
       <div class="pixel-timeline">
         <div class="pixel-timeline-item">
-          <span class="company-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/server.svg" alt="Server Icon" />
-          </span>
+          <span class="company-icon"><span class="icon-emoji" aria-label="Man at work">👷‍♂️</span></span>
           <div>
             <span class="exp-title">IT Support Specialist <span class="pixel-at">@RetroTech</span></span>
             <span class="exp-date">Nov 2023 – Present</span>
@@ -65,9 +63,7 @@
           </div>
         </div>
         <div class="pixel-timeline-item">
-          <span class="company-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/shield.svg" alt="Shield Icon" />
-          </span>
+          <span class="company-icon"><span class="icon-emoji" aria-label="Shield">🛡️</span></span>
           <div>
             <span class="exp-title">Cybersecurity Intern <span class="pixel-at">@SecureNow</span></span>
             <span class="exp-date">May 2022 – Oct 2023</span>
@@ -79,9 +75,7 @@
           </div>
         </div>
         <div class="pixel-timeline-item">
-          <span class="company-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/headphones.svg" alt="Headphones Icon" />
-          </span>
+          <span class="company-icon"><span class="icon-emoji" aria-label="Headphones">🎧</span></span>
           <div>
             <span class="exp-title">Help Desk Technician <span class="pixel-at">@Pixel Helpdesk</span></span>
             <span class="exp-date">Jul 2021 – Apr 2022</span>
@@ -94,108 +88,99 @@
         </div>
       </div>
     </section>
-
-    <!-- TECH STACK -->
-    <section id="stack" class="pixel-window fade-in">
+    <section id="stack" class="pixel-window fade-in" tabindex="-1">
       <h2>TECH STACK</h2>
       <div class="stack-list pixel-stack">
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/windows.svg" alt="Windows" class="stack-icon" /> Windows Server
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Windows">🪟</span> Windows Server</span>
           <span class="stack-desc">Administration, automation, user management</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/cloud.svg" alt="Cloud" class="stack-icon" /> VMware / Proxmox
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Cloud">☁️</span> VMware / Proxmox</span>
           <span class="stack-desc">Virtualization, backup, scalable environments</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/shield.svg" alt="Shield" class="stack-icon" /> Active Directory
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Shield">🛡️</span> Active Directory</span>
           <span class="stack-desc">Permissions, policies, security</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/linux.svg" alt="Linux" class="stack-icon" /> Linux
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Penguin">🐧</span> Linux</span>
           <span class="stack-desc">Bash scripting, server maintenance</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/mail.svg" alt="Mail" class="stack-icon" /> Office 365
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Envelope">✉️</span> Office 365</span>
           <span class="stack-desc">Mail, licenses, user support</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/terminal.svg" alt="Terminal" class="stack-icon" /> Python / Bash
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Terminal">💻</span> Python / Bash</span>
           <span class="stack-desc">Automation, scripts, integrations</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/git.svg" alt="Git" class="stack-icon" /> Git
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Git">🔀</span> Git</span>
           <span class="stack-desc">Versioning, team collaboration</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/headphones.svg" alt="Service Desk" class="stack-icon" /> Service Desk
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Headphones">🎧</span> Service Desk</span>
           <span class="stack-desc">Ticketing, communication, troubleshooting</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/lock.svg" alt="Lock" class="stack-icon" /> Network Security
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Lock">🔒</span> Network Security</span>
           <span class="stack-desc">Firewall, VPN, security policies</span>
         </div>
         <div class="stack-row">
-          <span class="stack-pill pixel-pill">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/gamepad.svg" alt="Gamepad" class="stack-icon" /> Unity
-          </span>
+          <span class="stack-pill pixel-pill"><span class="icon-emoji" aria-label="Gamepad">🕹️</span> Unity</span>
           <span class="stack-desc">Game development, pixel-art engine</span>
         </div>
       </div>
     </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="pixel-window fade-in">
+    <section id="projects" class="pixel-window fade-in" tabindex="-1">
       <h2>PROJECTS</h2>
       <div class="projects-grid pixel-projects">
         <div class="project-card pixel-card glass" tabindex="0">
-          <div class="project-thumb" style="background:linear-gradient(100deg,#a18cd1,#6366f1);"><span>Study Platform</span></div>
+          <div class="project-thumb" style="background:linear-gradient(100deg,#a18cd1,#6366f1);">
+            <span class="icon-emoji">📚</span>
+            <span>Study Platform</span>
+          </div>
           <div class="project-info">
             <p>React, Firebase. Study notes manager for students.</p>
             <a href="#" target="_blank" class="btn pixel-btn">PLAY</a>
           </div>
         </div>
         <div class="project-card pixel-card glass" tabindex="0">
-          <div class="project-thumb" style="background:linear-gradient(100deg,#fad0c4,#6366f1);"><span>Focus Timer</span></div>
+          <div class="project-thumb" style="background:linear-gradient(100deg,#fad0c4,#6366f1);">
+            <span class="icon-emoji">⏲️</span>
+            <span>Focus Timer</span>
+          </div>
           <div class="project-info">
             <p>JS, Service Worker, PWA. Productivity pixel-art app.</p>
             <a href="#" target="_blank" class="btn pixel-btn">PLAY</a>
           </div>
         </div>
         <div class="project-card pixel-card glass" tabindex="0">
-          <div class="project-thumb" style="background:linear-gradient(100deg,#cfd9df,#6366f1);"><span>OCR Web Tool</span></div>
+          <div class="project-thumb" style="background:linear-gradient(100deg,#cfd9df,#6366f1);">
+            <span class="icon-emoji">🔍</span>
+            <span>OCR Web Tool</span>
+          </div>
           <div class="project-info">
             <p>Tesseract.js. Extract text from images in your browser.</p>
             <a href="#" target="_blank" class="btn pixel-btn">PLAY</a>
           </div>
         </div>
         <div class="project-card pixel-card glass" tabindex="0">
-          <div class="project-thumb" style="background:linear-gradient(100deg,#d1fae5,#6366f1);"><span>Discord RPG Bot</span></div>
+          <div class="project-thumb" style="background:linear-gradient(100deg,#d1fae5,#6366f1);">
+            <span class="icon-emoji">💬</span>
+            <span>Discord RPG Bot</span>
+          </div>
           <div class="project-info">
             <p>Node.js, SQLite. Discord bot for text RPG quests.</p>
             <a href="#" target="_blank" class="btn pixel-btn">PLAY</a>
           </div>
         </div>
         <div class="project-card pixel-card glass" tabindex="0">
-          <div class="project-thumb" style="background:linear-gradient(100deg,#f9fafb,#6366f1);"><span>Retro Dungeon</span></div>
+          <div class="project-thumb" style="background:linear-gradient(100deg,#f9fafb,#6366f1);">
+            <span class="icon-emoji">🕹️</span>
+            <span>Retro Dungeon</span>
+          </div>
           <div class="project-info">
             <p>HTML5 Canvas, JS. Simple pixel dungeon crawler game.</p>
             <a href="#" target="_blank" class="btn pixel-btn">PLAY</a>
@@ -203,33 +188,25 @@
         </div>
       </div>
     </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="pixel-window fade-in">
+    <section id="education" class="pixel-window fade-in" tabindex="-1">
       <h2>EDUCATION</h2>
       <ul class="edu-list pixel-list">
         <li>
-          <span class="pixel-pill edu-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/graduationcap.svg" alt="Graduation Cap" class="edu-icon-img" />
-          </span>
+          <span class="pixel-pill edu-icon"><span class="icon-emoji" aria-label="Graduation cap">🎓</span></span>
           <span class="edu-main">
             University of Example <span class="pixel-at">Computer Science</span>
           </span>
           <span class="edu-meta">2019–2023</span>
         </li>
         <li>
-          <span class="pixel-pill edu-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/school.svg" alt="School" class="edu-icon-img" />
-          </span>
+          <span class="pixel-pill edu-icon"><span class="icon-emoji" aria-label="School">🏫</span></span>
           <span class="edu-main">
             Example Technical School <span class="pixel-at">IT Technician</span>
           </span>
           <span class="edu-meta">2015–2019</span>
         </li>
         <li>
-          <span class="pixel-pill edu-icon">
-            <img src="https://raw.githubusercontent.com/halfmage/pixelarticons/main/svg/certificate.svg" alt="Certificate" class="edu-icon-img" />
-          </span>
+          <span class="pixel-pill edu-icon"><span class="icon-emoji" aria-label="Certificate">📜</span></span>
           <span class="edu-main">
             Course: Ethical Hacking <span class="pixel-at">Online</span>
           </span>
@@ -237,67 +214,31 @@
         </li>
       </ul>
     </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="pixel-window fade-in">
+    <section id="skills" class="pixel-window fade-in" tabindex="-1">
       <h2>SKILLS</h2>
       <div class="unique-cards pixel-skills">
-        <div class="unique-card pixel-skill-card glass iconcard">⚡️ Automation & Scripting</div>
-        <div class="unique-card pixel-skill-card glass iconcard">🔒 Security & Networks</div>
-        <div class="unique-card pixel-skill-card glass iconcard">🤝 Communication & Teamwork</div>
-        <div class="unique-card pixel-skill-card glass iconcard">🚀 Innovation & Growth</div>
-        <div class="unique-card pixel-skill-card glass iconcard">🕹️ GameDev Basics</div>
-        <div class="unique-card pixel-skill-card glass iconcard">💻 WebDev Retro UI</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">⚡️</span> Automation &amp; Scripting</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">🔒</span> Security &amp; Networks</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">🤝</span> Communication &amp; Teamwork</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">🚀</span> Innovation &amp; Growth</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">🕹️</span> GameDev Basics</div>
+        <div class="unique-card pixel-skill-card glass iconcard"><span class="skill-emoji">💻</span> WebDev Retro UI</div>
       </div>
     </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="pixel-window fade-in">
+    <section id="contact" class="pixel-window fade-in" tabindex="-1">
       <h2>CONTACT</h2>
       <div class="contact-links pixel-contacts">
-        <a href="mailto:demo@example.com" title="Email" target="_blank" aria-label="Email">
-          <svg viewBox="0 0 32 32" width="32" height="32" class="pixel-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="8" width="24" height="16" fill="#fff" stroke="#23273e" stroke-width="2"/>
-            <polyline points="4,8 16,20 28,8" fill="none" stroke="#23273e" stroke-width="2"/>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-          <svg viewBox="0 0 32 32" width="32" height="32" class="pixel-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="24" height="24" fill="#fff" stroke="#23273e" stroke-width="2"/>
-            <rect x="8" y="12" width="4" height="12" fill="#23273e"/>
-            <rect x="20" y="16" width="4" height="8" fill="#23273e"/>
-            <rect x="8" y="8" width="4" height="4" fill="#23273e"/>
-            <rect x="14" y="16" width="4" height="8" fill="#23273e"/>
-            <rect x="14" y="12" width="10" height="2" fill="#23273e"/>
-          </svg>
-        </a>
-        <a href="https://github.com/" target="_blank" title="GitHub" aria-label="GitHub">
-          <svg viewBox="0 0 32 32" width="32" height="32" class="pixel-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="24" height="24" fill="#fff" stroke="#23273e" stroke-width="2"/>
-            <rect x="10" y="18" width="12" height="2" fill="#23273e"/>
-            <rect x="12" y="14" width="8" height="4" fill="#23273e"/>
-            <rect x="14" y="10" width="4" height="4" fill="#23273e"/>
-          </svg>
-        </a>
-        <a href="https://twitter.com/" target="_blank" title="Twitter" aria-label="Twitter">
-          <svg viewBox="0 0 32 32" width="32" height="32" class="pixel-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="24" height="24" fill="#fff" stroke="#23273e" stroke-width="2"/>
-            <polygon points="10,22 22,10 24,12 12,24" fill="#23273e"/>
-            <rect x="8" y="12" width="4" height="4" fill="#23273e"/>
-          </svg>
-        </a>
-        <a href="https://discord.com/" target="_blank" title="Discord" aria-label="Discord">
-          <svg viewBox="0 0 32 32" width="32" height="32" class="pixel-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="24" height="24" fill="#fff" stroke="#23273e" stroke-width="2"/>
-            <rect x="10" y="18" width="12" height="4" fill="#23273e"/>
-            <rect x="8" y="12" width="4" height="4" fill="#23273e"/>
-            <rect x="20" y="12" width="4" height="4" fill="#23273e"/>
-            <rect x="14" y="14" width="4" height="2" fill="#fff"/>
-          </svg>
-        </a>
+        <a href="mailto:demo@example.com" aria-label="Email"><span class="icon-emoji big-emoji">✉️</span></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="icon-emoji big-emoji">💼</span></a>
+        <a href="https://github.com/" aria-label="GitHub"><span class="icon-emoji big-emoji">🐱</span></a>
+        <a href="https://twitter.com/" aria-label="Twitter"><span class="icon-emoji big-emoji">🐦</span></a>
+        <a href="https://discord.com/" aria-label="Discord"><span class="icon-emoji big-emoji">💬</span></a>
       </div>
     </section>
   </main>
+  <button id="topBtn" class="pixel-top-btn" aria-label="Go to top" title="Go to top">
+    <span class="icon-emoji" style="font-size:2em;">⬆️</span>
+  </button>
   <footer class="pixel-footer pixel-border">
     <span>&copy; 2025 Demo User. Pixel-art style portfolio 🎮</span>
   </footer>
